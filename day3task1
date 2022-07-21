@@ -1,0 +1,30 @@
+//For loop :
+
+var num=[12,13,14,15,16,17,18];
+
+for (let i = 0; i < num.length; i++) {
+if(num[i]%2===0){
+    console.log(num[i])
+}
+}
+
+//For in loop [only for objects] :
+
+const courses = {
+    firstCourse: "C++",
+        secondCourse: "Java",
+        thirdCourse: "Css"
+    };
+
+    const student1 = Object.create(courses);
+
+    student1.id = 123;
+    student1.firstName = "Prakhar";
+    
+        console.log(courses);
+    
+
+    for (let prop in student1) {
+        console.log(prop + " -> " 
+            + student1[prop]);
+    }
